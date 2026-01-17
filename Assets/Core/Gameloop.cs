@@ -1,9 +1,12 @@
 using UnityEngine;
-
+using UnityEngine.InputSystem;
+using System.Collections.Generic;
 public class Gameloop: MonoBehaviour
 {
     const float FRAME_TIME = 1f / 60f;
     float accumulator;
+
+
 
 
     public InputHandler inputHandler1;
@@ -24,6 +27,20 @@ public class Gameloop: MonoBehaviour
 
     }
 
+    private readonly List<PlayerInput> fighters = new();
+    private readonly List<InputHandler> inputHandlers = new();
+
+    public void OnPlayerJoined(PlayerInput playerInput)
+    {
+        // Called automatically by PlayerInputManager if wired in Inspector
+        var fighter = playerInput.GetComponent<PlayerInput>();
+        var input   = playerInput.GetComponent<InputHandler>();
+
+        fighters.Add(fighter);
+        inputHandlers.Add(input);
+
+        Debug.Log($"Player joined: index={playerInput.playerIndex}, devices={string.Join(",", playerInput.devices)}");
+    }
 
     void OnEnable()
     {
@@ -49,7 +66,7 @@ public class Gameloop: MonoBehaviour
     }
 
     void Start()
-    {
+    {   
         player1Component = new PlayerComponent(playerData1,0);
         player2Component = new PlayerComponent(playerData2,1);
     } 
@@ -57,6 +74,7 @@ public class Gameloop: MonoBehaviour
 
     void UpdatePlayerDirection()
     {
+        if (player1Component == null || player2Component == null) return;
         if (player1Component.CoordX < player2Component.CoordX) {
             player1Component.facing = PlayerComponent.Direction.Right;
             player2Component.facing = PlayerComponent.Direction.Left;
@@ -70,7 +88,7 @@ public class Gameloop: MonoBehaviour
     {
         UpdatePlayerDirection();
 
-        Debug.Log("Player 1 X: " + player1Component.CoordX + " Player 2 X: " + player2Component.CoordX);
+        //Debug.Log("Player 1 X: " + player1Component.CoordX + " Player 2 X: " + player2Component.CoordX);
         // process inputs        
         FrameInput input1 = inputHandler1.ConsumeInput();
         FrameInput input2 = inputHandler2.ConsumeInput();

@@ -20,8 +20,8 @@ MonoBehaviour:
   activeFrames: 20
   recoveryFrames: 10
   maxHits: 1
-  hitlagFrames: 90
+  hitlagFrames: 5
   knockbackForce: 5
-  knockbackFrames: 60
-  knockbackDirection: {x: 3, y: 3}
+  knockbackFrames: 10
+  knockbackDirection: {x: 1, y: 1}
   kbDecay: 1
