@@ -74,7 +74,6 @@ public class AttackHandler : MonoBehaviour
             Debug.Log(currentMoveData.startupFrames);
             Debug.Log(moveFrameCount);
             if (moveFrameCount < currentMoveData.startupFrames) {
-                Debug.Log("startup");
                 return;
             }
             else if (moveFrameCount < currentMoveData.activeFrames + currentMoveData.startupFrames) {
@@ -113,12 +112,10 @@ public class AttackHandler : MonoBehaviour
                 }
                 // handle hitboxes activation/states
                 // switch on moveframecount -> data->move states
-                Debug.Log("active");
                 isActiveFrame = true;
             }
             else
             {
-            Debug.Log("end");
             }
         }
 
