@@ -48,7 +48,7 @@ public class InputHandler : MonoBehaviour
         move.performed -= OnMovePerformed;
         move.canceled  -= OnMoveCanceled;
 
-        jump.performed -= _ => inputBuffer.SetJump();      // (see note below)
+        jump.performed -= _ => inputBuffer.SetJump();     
         light.performed -= _ => inputBuffer.SetLightPunch();
         medium.performed -= _ => inputBuffer.SetMediumPunch();
         heavy.performed -= _ => inputBuffer.SetHeavyPunch();

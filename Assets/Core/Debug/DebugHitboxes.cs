@@ -22,7 +22,7 @@ public class DebugHitboxes: MonoBehaviour
                 Gizmos.color = Color.red;
                 Vector2 hitboxPosition = (Vector2)transform.position + 
                     new Vector2(
-                    currentMove.hitboxOffset.x * -attackHandler.directionMultiplier,
+                    currentMove.hitboxOffset.x * attackHandler.directionMultiplier,
                     currentMove.hitboxOffset.y
                 );
                 Gizmos.DrawWireCube(hitboxPosition, currentMove.hitboxSize);

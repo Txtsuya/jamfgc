@@ -52,13 +52,29 @@ public class AttackHandler : MonoBehaviour
         moveFrameCount = 0;
         currentMoveData = moveData;
         if (self.facing == PlayerComponent.Direction.Left) {
-            directionMultiplier = 1;
+            directionMultiplier = -1;
         } else {
 
-            directionMultiplier = -1;
+            directionMultiplier = 1;
         }
     }
 
+
+private bool isBlocking(MoveData move, PlayerComponent self, PlayerComponent other) {
+        if (move.moveType == MoveData.MoveType.Medium && other.isBlocking)
+        {
+            return true;
+        }
+        if (move.moveType == MoveData.MoveType.Low && other.isBlocking && other.isCrouching)
+        {
+            return true;
+        }
+        if (move.moveType == MoveData.MoveType.High && other.isBlocking && !other.isCrouching)
+        {
+            return true;
+        }
+        return false;
+    }
     private void ProcessMove(PlayerComponent self, PlayerComponent other)
     {
         moveFrameCount++;
@@ -73,7 +89,7 @@ public class AttackHandler : MonoBehaviour
             }
             Vector2 hitboxPos = rb.position +
                 new Vector2(
-                    currentMoveData.hitboxOffset.x * -directionMultiplier,
+                    currentMoveData.hitboxOffset.x * directionMultiplier,
                     currentMoveData.hitboxOffset.y
                 );
             Collider2D[] hits = Physics2D.OverlapBoxAll(
@@ -85,7 +101,14 @@ public class AttackHandler : MonoBehaviour
             foreach (Collider2D hit in hits)
             {
                 Debug.Log("Hit: " + hit.name);
-                if (other.isBlocking) {
+                if (isBlocking(currentMoveData, self, other)) {
+                    other.ApplyKnockback(
+                        currentMoveData.blockPushback,
+                        currentMoveData.blockPushbackForce,
+                        currentMoveData.blockPushbackFrames,
+                        directionMultiplier
+                    );
+                    other.ApplyHitlag(currentMoveData.blockStunFrames);
                     Debug.Log("Blocked!");
                     moveHitCount++;
                     continue;
