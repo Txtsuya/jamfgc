@@ -57,9 +57,11 @@ public class PlayerComponent
         hitLagFrames = frames;
     }
 
-    public void ApplyKnockback(Vector2 direction, float force, int frames)
+    public void ApplyKnockback(Vector2 direction, float force, int frames, int multiplier)
     {
-        kbDirection = direction.normalized;
+        //kbDirection = direction.normalized * multiplier;
+        kbDirection.x = direction.normalized.x * multiplier;
+        kbDirection.y = direction.normalized.y;
         kbForce = force;
         kbFrames = frames;
     }

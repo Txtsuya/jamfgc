@@ -11,6 +11,7 @@ public class AttackHandler : MonoBehaviour
 
     public bool isAttacking = false;
 
+    public int directionMultiplier = 1;
     private int moveFrameCount = 0;
     private int moveHitCount = 0;
     public MoveData currentMoveData;
@@ -28,13 +29,13 @@ public class AttackHandler : MonoBehaviour
         if (!isAttacking) {
             switch (input) {
                 case { lightPunch: true }:
-                    StartMove(lightPunchMoveData);
+                    StartMove(lightPunchMoveData, self);
                     break;
                 case { mediumPunch: true }:
-                    StartMove(mediumPunchMoveData);
+                    StartMove(mediumPunchMoveData, self);
                     break;
                 case { heavyPunch: true }:
-                    StartMove(heavyPunchMoveData);
+                    StartMove(heavyPunchMoveData, self);
                     break;
                 default:
                     break;
@@ -45,11 +46,17 @@ public class AttackHandler : MonoBehaviour
 
     }
 
-    private void StartMove(MoveData moveData)
+    private void StartMove(MoveData moveData, PlayerComponent self)
     {
         isAttacking = true;
         moveFrameCount = 0;
         currentMoveData = moveData;
+        if (self.facing == PlayerComponent.Direction.Left) {
+            directionMultiplier = 1;
+        } else {
+
+            directionMultiplier = -1;
+        }
     }
 
     private void ProcessMove(PlayerComponent self, PlayerComponent other)
@@ -64,8 +71,13 @@ public class AttackHandler : MonoBehaviour
             if (moveHitCount >= currentMoveData.maxHits) {
                 return;
             }
+            Vector2 hitboxPos = rb.position +
+                new Vector2(
+                    currentMoveData.hitboxOffset.x * -directionMultiplier,
+                    currentMoveData.hitboxOffset.y
+                );
             Collider2D[] hits = Physics2D.OverlapBoxAll(
-                rb.position + currentMoveData.hitboxOffset,
+                hitboxPos,
                 currentMoveData.hitboxSize,
                 0f,
                 hurtboxLayer
@@ -84,7 +96,8 @@ public class AttackHandler : MonoBehaviour
                 other.ApplyKnockback(
                     currentMoveData.knockbackDirection,
                     currentMoveData.knockbackForce,
-                    currentMoveData.knockbackFrames
+                    currentMoveData.knockbackFrames,
+                    directionMultiplier
                 );
 
             }
