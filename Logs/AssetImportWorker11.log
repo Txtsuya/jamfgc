@@ -6628,3 +6628,19 @@ Memory consumption went from 452.4 MB to 448.7 MB.
 Total: 5.229041 ms (FindLiveObjects: 0.324250 ms CreateObjectMapping: 0.113583 ms MarkObjects: 3.772292 ms  DeleteObjects: 1.018708 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 12352.974315 seconds.
+  path: Assets/ArcueidAnimController.controller
+  artifactKey: Guid(95e0cfd9a4500dd40999f653f646ba59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArcueidAnimController.controller using Guid(95e0cfd9a4500dd40999f653f646ba59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2238546272518cfb618ff414aafe03cb') in 0.04453775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 42
+
+========================================================================
+Received Import Request.
+  Time since last request: 150.018457 seconds.
+  path: Assets/Animations/ShikiAnimController.controller
+  artifactKey: Guid(66f045107454f45b1a99770a46e1b0bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/ShikiAnimController.controller using Guid(66f045107454f45b1a99770a46e1b0bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e12de5bb9f43ba22f538301af2a4ad06') in 0.005144875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 42
+
