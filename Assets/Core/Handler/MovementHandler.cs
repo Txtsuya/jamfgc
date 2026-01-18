@@ -25,8 +25,6 @@ public class MovementHandler : MonoBehaviour
         col = GetComponent<CapsuleCollider2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-
-        // Sauvegarder les valeurs debout
         standingSize = col.size;
         standingOffset = col.offset;
     }
@@ -38,8 +36,6 @@ public class MovementHandler : MonoBehaviour
         if (self.ProcessHitlag()) {
             return;
         }
-
-        // Déterminer si on recule
         bool isBackWalking = false;
         bool isMoving = input.moveX > 0.5f || input.moveX < -0.5f;
 
@@ -60,8 +56,6 @@ public class MovementHandler : MonoBehaviour
             rb.linearVelocity = new Vector2(input.moveX * moveSpeed, rb.linearVelocity.y);
             self.CoordX = rb.transform.position.x;
         }
-
-        // isWalking seulement si on avance (pas backwalk)
         animator.SetBool("isWalking", isMoving && !isBackWalking);
         animator.SetBool("isBackWalking", isBackWalking);
 
@@ -73,7 +67,6 @@ public class MovementHandler : MonoBehaviour
         if (input.moveY < -0.5f) {
             self.isCrouching = true;
             col.size = crouchingSize;
-            // Garder le bas du collider au même endroit
             float standingBottom = standingOffset.y - standingSize.y / 2f;
             float newOffsetY = (standingBottom + crouchingSize.y) - 0.165f;
            // Debug.Log(newOffsetY);
