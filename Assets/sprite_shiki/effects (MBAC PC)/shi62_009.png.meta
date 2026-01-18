@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: e127811eb6d874269875b70533f40c59
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6201166625192497005
+    second: shi62_009_0
+  - first:
+      213: 657404739319645282
+    second: shi62_009_1
+  - first:
+      213: 8789800879873496037
+    second: shi62_009_2
+  - first:
+      213: 5792600466302770604
+    second: shi62_009_3
+  - first:
+      213: -3602881147405133687
+    second: shi62_009_4
+  - first:
+      213: 5678426007611533845
+    second: shi62_009_5
+  - first:
+      213: -6571162973011705153
+    second: shi62_009_6
+  - first:
+      213: 1962822055526724905
+    second: shi62_009_7
+  - first:
+      213: -5356124718090795721
+    second: shi62_009_8
+  - first:
+      213: -3356810359185474589
+    second: shi62_009_9
+  - first:
+      213: 1875168516203268220
+    second: shi62_009_10
+  - first:
+      213: -336353371045938714
+    second: shi62_009_11
+  - first:
+      213: 9047228639608832384
+    second: shi62_009_12
+  - first:
+      213: -2497778886671512213
+    second: shi62_009_13
+  - first:
+      213: -6482945643194950853
+    second: shi62_009_14
+  - first:
+      213: -2705773072836143912
+    second: shi62_009_15
+  - first:
+      213: 6263034666572289511
+    second: shi62_009_16
+  - first:
+      213: -4510870475628958201
+    second: shi62_009_17
+  - first:
+      213: -5758925176069813004
+    second: shi62_009_18
+  - first:
+      213: 4873413454736530489
+    second: shi62_009_19
+  - first:
+      213: -1158060770439886620
+    second: shi62_009_20
+  - first:
+      213: 1114610384557465898
+    second: shi62_009_21
+  - first:
+      213: -5786969350960984863
+    second: shi62_009_22
+  - first:
+      213: 2224970698973640382
+    second: shi62_009_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shi62_009_0
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 151
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 390b4604fc701f9a0800000000000000
+      internalID: -6201166625192497005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 151
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2644ec890229f1900800000000000000
+      internalID: 657404739319645282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_2
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 154
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e396437455abf970800000000000000
+      internalID: 8789800879873496037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_3
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 149
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad1dbffe63736050800000000000000
+      internalID: 5792600466302770604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_4
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 153
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98817f07faefffdc0800000000000000
+      internalID: -3602881147405133687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_5
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 154
+        width: 100
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a660b4e52ddce40800000000000000
+      internalID: 5678426007611533845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_6
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 100
+        width: 77
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb20070771a8ec4a0800000000000000
+      internalID: -6571162973011705153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_7
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 139
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 925f8f092485d3b10800000000000000
+      internalID: 1962822055526724905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_8
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 145
+        width: 19
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735428562f83ba5b0800000000000000
+      internalID: -5356124718090795721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_9
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 144
+        width: 30
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ebf56273c63a61d0800000000000000
+      internalID: -3356810359185474589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 53
+        width: 112
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78ca4694dfe50a10800000000000000
+      internalID: 1875168516203268220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_11
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 135
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e93dcf1468055bf0800000000000000
+      internalID: -336353371045938714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_12
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 111
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08100a173863e8d70800000000000000
+      internalID: 9047228639608832384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 105
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d497c165b165dd0800000000000000
+      internalID: -2497778886671512213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_14
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 98
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3bd23f1943f706a0800000000000000
+      internalID: -6482945643194950853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_15
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 99
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4d8ced9b9237ad0800000000000000
+      internalID: -2705773072836143912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_16
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 79
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e59ff4a8d4cae650800000000000000
+      internalID: 6263034666572289511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_17
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 93
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ea658b33b2661c0800000000000000
+      internalID: -4510870475628958201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_18
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 93
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fc0e4080103410b0800000000000000
+      internalID: -5758925176069813004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_19
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 80
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c1e2577b7d1a340800000000000000
+      internalID: 4873413454736530489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 81
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e88d9d6dddbdefe0800000000000000
+      internalID: -1158060770439886620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_21
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 87
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2162824d34e77f00800000000000000
+      internalID: 1114610384557465898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_22
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 65
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ecc5e5390e80bfa0800000000000000
+      internalID: -5786969350960984863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shi62_009_23
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 70
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb6f9f3ff0fa0ee10800000000000000
+      internalID: 2224970698973640382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      shi62_009_0: -6201166625192497005
+      shi62_009_1: 657404739319645282
+      shi62_009_10: 1875168516203268220
+      shi62_009_11: -336353371045938714
+      shi62_009_12: 9047228639608832384
+      shi62_009_13: -2497778886671512213
+      shi62_009_14: -6482945643194950853
+      shi62_009_15: -2705773072836143912
+      shi62_009_16: 6263034666572289511
+      shi62_009_17: -4510870475628958201
+      shi62_009_18: -5758925176069813004
+      shi62_009_19: 4873413454736530489
+      shi62_009_2: 8789800879873496037
+      shi62_009_20: -1158060770439886620
+      shi62_009_21: 1114610384557465898
+      shi62_009_22: -5786969350960984863
+      shi62_009_23: 2224970698973640382
+      shi62_009_3: 5792600466302770604
+      shi62_009_4: -3602881147405133687
+      shi62_009_5: 5678426007611533845
+      shi62_009_6: -6571162973011705153
+      shi62_009_7: 1962822055526724905
+      shi62_009_8: -5356124718090795721
+      shi62_009_9: -3356810359185474589
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
