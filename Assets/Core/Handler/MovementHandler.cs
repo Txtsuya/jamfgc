@@ -73,7 +73,7 @@ public class MovementHandler : MonoBehaviour
             // Garder le bas du collider au même endroit
             float standingBottom = standingOffset.y - standingSize.y / 2f;
             float newOffsetY = (standingBottom + crouchingSize.y) - 0.165f;
-            Debug.Log(newOffsetY);
+           // Debug.Log(newOffsetY);
             col.offset = new Vector2(standingOffset.x, newOffsetY);
         } else {
             self.isCrouching = false;

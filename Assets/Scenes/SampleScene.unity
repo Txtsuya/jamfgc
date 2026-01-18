@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 509589395}
   - component: {fileID: 509589394}
   - component: {fileID: 509589393}
+  - component: {fileID: 509589402}
   m_Layer: 10
   m_Name: player2
   m_TagString: Untagged
@@ -256,6 +257,8 @@ MonoBehaviour:
   heavyPunchMoveData: {fileID: 11400000, guid: b04952a7b01c46448bdadf5d88b96d54, type: 2}
   animator: {fileID: 0}
   isAttacking: 0
+  isActiveFrame: 0
+  directionMultiplier: 1
   currentMoveData: {fileID: 0}
 --- !u!114 &509589395
 MonoBehaviour:
@@ -269,7 +272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfd025b57b2befb4cb860fa480a0bcac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InputHandler
-  playerId: 2
 --- !u!114 &509589396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,6 +448,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &509589402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509589392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: 0d3dbea60d379424d9113a73256f0ad3, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,14 +708,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1630062752}
-  - component: {fileID: 1630062751}
-  - component: {fileID: 1630062750}
   - component: {fileID: 1630062754}
   - component: {fileID: 1630062753}
   - component: {fileID: 1630062756}
   - component: {fileID: 1630062757}
   - component: {fileID: 1630062755}
   - component: {fileID: 1630062758}
+  - component: {fileID: 1630062751}
+  - component: {fileID: 1630062750}
+  - component: {fileID: 1630062759}
   m_Layer: 9
   m_Name: player1
   m_TagString: Untagged
@@ -871,6 +904,8 @@ MonoBehaviour:
   heavyPunchMoveData: {fileID: 11400000, guid: b04952a7b01c46448bdadf5d88b96d54, type: 2}
   animator: {fileID: 0}
   isAttacking: 0
+  isActiveFrame: 0
+  directionMultiplier: 1
   currentMoveData: {fileID: 0}
 --- !u!114 &1630062756
 MonoBehaviour:
@@ -900,7 +935,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfd025b57b2befb4cb860fa480a0bcac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InputHandler
-  playerId: 1
 --- !u!114 &1630062758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -913,6 +947,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13556404a096d9b4aa9420b8bc5752d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DebugHitboxes
+--- !u!114 &1630062759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630062749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: 0d3dbea60d379424d9113a73256f0ad3, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1840484925
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,6 +987,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1840484927}
   - component: {fileID: 1840484926}
+  - component: {fileID: 1840484928}
   m_Layer: 0
   m_Name: Director
   m_TagString: Untagged
@@ -965,6 +1030,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1840484928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840484925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 621567455fd1c4ceb811cc8a00b6a1a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInputManager
+  m_NotificationBehavior: 0
+  m_MaxPlayerCount: -1
+  m_AllowJoining: 1
+  m_JoinBehavior: 0
+  m_PlayerJoinedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_PlayerLeftEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_JoinAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: c7b42aca-e14b-410a-b5f3-c965bd7c0580
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  m_PlayerPrefab: {fileID: 1630062749}
+  m_SplitScreen: 0
+  m_MaintainAspectRatioInSplitScreen: 0
+  m_FixedNumberOfSplitScreens: -1
+  m_SplitScreenRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!1 &1897626215 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7720142174441302186, guid: 95cb9745d0f90ed4cb2976ad2147b05d, type: 3}

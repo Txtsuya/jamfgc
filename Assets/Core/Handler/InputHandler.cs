@@ -1,101 +1,76 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-
+[RequireComponent(typeof(PlayerInput))]
 public class InputHandler : MonoBehaviour
 {
-    public int playerId = 1;
-    private PlayerControls controls;
+    private PlayerInput playerInput;
     private InputBuffer inputBuffer = new InputBuffer();
+
+    private InputAction move;
+    private InputAction jump;
+    private InputAction light;
+    private InputAction medium;
+    private InputAction heavy;
 
     private void Awake()
     {
-        controls = new PlayerControls();
-    } 
+        playerInput = GetComponent<PlayerInput>();
+
+        // IMPORTANT: this is the per-player action instance
+        var actions = playerInput.actions;
+
+        // These names must match your Input Actions asset
+        move   = actions["Move"];
+        jump   = actions["Jump"];
+        light  = actions["LightPunch"];
+        medium = actions["MediumPunch"];
+        heavy  = actions["HeavyPunch"];
+    }
 
     private void OnEnable()
     {
-        controls.Player.Enable();
+        // Ensure only the gameplay map is enabled (adjust "Player" if your map name differs)
+        playerInput.actions.Disable();
+        playerInput.actions.FindActionMap("Player", true).Enable();
 
-        if (playerId == 1) {
-        controls.Player.Move.performed += ctx =>
-        {
-            Vector2 v = ctx.ReadValue<Vector2>();
-            // deadzone for controller
-            if (v.x > 0.5f || v.x < -0.5f) {
-            inputBuffer.SetMoveX(Mathf.RoundToInt(v.x));
-            
-            }
-            if (v.y > 0.5f || v.y < -0.5f) {
-            inputBuffer.SetMoveY(Mathf.RoundToInt(v.y));
-            }
-        }; }
-        else
-        {
-             controls.Player.Move1.performed += ctx =>
-        {
-            Vector2 v = ctx.ReadValue<Vector2>();
-            if (v.x > 0.5f || v.x < -0.5f) {
-            inputBuffer.SetMoveX(Mathf.RoundToInt(v.x));
-            }
-            if (v.y > 0.5f || v.y < -0.5f) {
-            inputBuffer.SetMoveY(Mathf.RoundToInt(v.y));
-            }
-        };
-        }
+        move.performed += OnMovePerformed;
+        move.canceled  += OnMoveCanceled;
 
-        controls.Player.Move.canceled += _ =>
-        {
-            inputBuffer.SetMoveX(0);
-            inputBuffer.SetMoveY(0);
-        };
-
-
-        controls.Player.Move1.canceled += _ =>
-        {
-            inputBuffer.SetMoveX(0);
-            inputBuffer.SetMoveY(0);
-        };
-
-        if (playerId == 1) {
-        controls.Player.Move.performed +=  ctx =>
-        {
-            // deadzone for controller 
-            if (ctx.ReadValue<Vector2>().y > 0.5) {
-                inputBuffer.SetJump();
-            }
-        };
-        } else {
-         controls.Player.Move1.performed +=  ctx =>
-        {
-            if (ctx.ReadValue<Vector2>().y > 0.5) {
-                inputBuffer.SetJump();
-            }
-        };   
-        }
-
-        controls.Player.MediumPunch.performed += _ =>
-        {
-            inputBuffer.SetMediumPunch();
-        };
-
-        controls.Player.HeavyPunch.performed += _ =>
-        {
-            inputBuffer.SetHeavyPunch();
-        };
-
-        controls.Player.LightPunch.performed += _ =>
-        {
-            inputBuffer.SetLightPunch();
-        };
+        jump.performed += _ => inputBuffer.SetJump();
+        light.performed += _ => inputBuffer.SetLightPunch();
+        medium.performed += _ => inputBuffer.SetMediumPunch();
+        heavy.performed += _ => inputBuffer.SetHeavyPunch();
     }
 
     private void OnDisable()
     {
-        controls.Player.Disable();
+        move.performed -= OnMovePerformed;
+        move.canceled  -= OnMoveCanceled;
+
+        jump.performed -= _ => inputBuffer.SetJump();     
+        light.performed -= _ => inputBuffer.SetLightPunch();
+        medium.performed -= _ => inputBuffer.SetMediumPunch();
+        heavy.performed -= _ => inputBuffer.SetHeavyPunch();
     }
 
-    public FrameInput ConsumeInput()
+    private void OnMovePerformed(InputAction.CallbackContext ctx)
     {
-        return inputBuffer.Consume();
+        Vector2 v = ctx.ReadValue<Vector2>();
+
+        // deadzone
+        int x = (Mathf.Abs(v.x) > 0.5f) ? Mathf.RoundToInt(v.x) : 0;
+        int y = (Mathf.Abs(v.y) > 0.5f) ? Mathf.RoundToInt(v.y) : 0;
+
+        inputBuffer.SetMoveX(x);
+        inputBuffer.SetMoveY(y);
     }
+
+    private void OnMoveCanceled(InputAction.CallbackContext ctx)
+    {
+        inputBuffer.SetMoveX(0);
+        inputBuffer.SetMoveY(0);
+    }
+
+    public FrameInput ConsumeInput() => inputBuffer.Consume();
 }

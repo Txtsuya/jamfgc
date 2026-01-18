@@ -255,6 +255,7 @@ MonoBehaviour:
   mediumPunchMoveData: {fileID: 11400000, guid: e6e7bd53dbb509b4b98db0446bcb568e, type: 2}
   heavyPunchMoveData: {fileID: 11400000, guid: b04952a7b01c46448bdadf5d88b96d54, type: 2}
   isAttacking: 0
+  directionMultiplier: 1
   currentMoveData: {fileID: 0}
 --- !u!114 &509589395
 MonoBehaviour:

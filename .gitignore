@@ -39,3 +39,6 @@ sysinfo.txt
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# virer les .logs psk bon c rigolo 3s mais faut aller se faire foutre au bout d'un moment 
+*.log

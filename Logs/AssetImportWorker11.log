@@ -7003,3 +7003,494 @@ Memory consumption went from 470.8 MB to 467.6 MB.
 Total: 5.373250 ms (FindLiveObjects: 0.321625 ms CreateObjectMapping: 0.118042 ms MarkObjects: 3.978958 ms  DeleteObjects: 0.954250 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Thread 0x16f58b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.488 seconds
+Refreshing native plugins compatible for Editor in 0.24 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.434 seconds
+Domain Reload Profiling: 925ms
+	BeginReloadAssembly (184ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (77ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (17ms)
+	LoadAllAssembliesAndSetupDomain (260ms)
+		LoadAssemblies (184ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (119ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (100ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (434ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (346ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (95ms)
+			ProcessInitializeOnLoadAttributes (211ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6888 unused Assets / (3.5 MB). Loaded Objects now: 8055.
+Memory consumption went from 473.9 MB to 470.4 MB.
+Total: 5.255458 ms (FindLiveObjects: 0.347709 ms CreateObjectMapping: 0.126333 ms MarkObjects: 3.839500 ms  DeleteObjects: 0.941667 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16f2cf000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.500 seconds
+Refreshing native plugins compatible for Editor in 0.26 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.404 seconds
+Domain Reload Profiling: 907ms
+	BeginReloadAssembly (194ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (27ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (90ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (17ms)
+	LoadAllAssembliesAndSetupDomain (262ms)
+		LoadAssemblies (178ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (116ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (99ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (404ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (319ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (89ms)
+			ProcessInitializeOnLoadAttributes (189ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6888 unused Assets / (3.2 MB). Loaded Objects now: 8058.
+Memory consumption went from 477.0 MB to 473.8 MB.
+Total: 5.247333 ms (FindLiveObjects: 0.339333 ms CreateObjectMapping: 0.123375 ms MarkObjects: 3.859875 ms  DeleteObjects: 0.924541 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 26460.603390 seconds.
+  path: Assets/sprite_shiki/shi00_000.png
+  artifactKey: Guid(12838a660fa6c46d685a60095b2f06b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprite_shiki/shi00_000.png using Guid(12838a660fa6c46d685a60095b2f06b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1580c900af40b7c3e2be106934fc4e9a') in 0.065060208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Thread 0x16f2cf000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.490 seconds
+Refreshing native plugins compatible for Editor in 0.25 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.415 seconds
+Domain Reload Profiling: 908ms
+	BeginReloadAssembly (185ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (21ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (76ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (260ms)
+		LoadAssemblies (169ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (123ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (105ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (415ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (332ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (92ms)
+			ProcessInitializeOnLoadAttributes (199ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6888 unused Assets / (3.2 MB). Loaded Objects now: 8061.
+Memory consumption went from 480.4 MB to 477.1 MB.
+Total: 5.569250 ms (FindLiveObjects: 0.326458 ms CreateObjectMapping: 0.134042 ms MarkObjects: 4.133833 ms  DeleteObjects: 0.974667 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 169.755955 seconds.
+  path: Assets/sprite_shiki/ArcCrouch.anim
+  artifactKey: Guid(0803030e0a8884dd1abccc87979e1111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprite_shiki/ArcCrouch.anim using Guid(0803030e0a8884dd1abccc87979e1111) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c9525d2a1da2a47ad902bfbddc00b0b8') in 0.034509167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.520732 seconds.
+  path: Assets/Animations/shiki_idle 1.anim
+  artifactKey: Guid(185cf8f23282948c3bc071665e302b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/shiki_idle 1.anim using Guid(185cf8f23282948c3bc071665e302b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '09eaf5f4f0a1d0ae51c7d8c5e02b5b9f') in 0.003374833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.628535 seconds.
+  path: Assets/Core/Handler/MovementHandler.cs
+  artifactKey: Guid(15813f32e4300ac4998b3ff0da1b2c83) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Core/Handler/MovementHandler.cs using Guid(15813f32e4300ac4998b3ff0da1b2c83) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '127194aa0c47ce42c7717ac18edbd657') in 0.056942667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/sprite_arcueid/ArcJump.anim
+  artifactKey: Guid(056857158f6ef46c58cf4e400df182b4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/sprite_arcueid/ArcJump.anim using Guid(056857158f6ef46c58cf4e400df182b4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2d64a21958cce4262ff72de76086501f') in 0.017486875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Core/Debug/DebugHitboxes.cs
+  artifactKey: Guid(13556404a096d9b4aa9420b8bc5752d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Core/Debug/DebugHitboxes.cs using Guid(13556404a096d9b4aa9420b8bc5752d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '987c69b9ed22017a0c905452991352e5') in 0.002350417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Core/Data/Moves/Move_MediumPunch.asset
+  artifactKey: Guid(e6e7bd53dbb509b4b98db0446bcb568e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Core/Data/Moves/Move_MediumPunch.asset using Guid(e6e7bd53dbb509b4b98db0446bcb568e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '66c2a4c21c6895eec5e8c58a3092ab5f') in 0.012002583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/SampleScene.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b53ff8c0ce682c9b7098f42fd1c5afef') in 0.00437575 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Core/Data/Moves/Move_HeavyPunch.asset
+  artifactKey: Guid(b04952a7b01c46448bdadf5d88b96d54) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Core/Data/Moves/Move_HeavyPunch.asset using Guid(b04952a7b01c46448bdadf5d88b96d54) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f27e3578b3e540b9ebb87a80449640fd') in 0.002557458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/sprite_arcueid/ShikiStartJump.anim
+  artifactKey: Guid(ae8dcb8540e054898b42b9b3b450bce3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/sprite_arcueid/ShikiStartJump.anim using Guid(ae8dcb8540e054898b42b9b3b450bce3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8b3c002e1c2874ca5d0300fe09009c48') in 0.003823375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Core/Handler/InputHandler.cs
+  artifactKey: Guid(dfd025b57b2befb4cb860fa480a0bcac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Core/Handler/InputHandler.cs using Guid(dfd025b57b2befb4cb860fa480a0bcac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '93c4a4c8154226325d44b1688b88d548') in 0.001695542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/_Recovery/0.unity
+  artifactKey: Guid(8fd618deff7374851b3ed4c6c671826f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Recovery/0.unity using Guid(8fd618deff7374851b3ed4c6c671826f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a957eb8e3c7ec444dc80184176c7e4f5') in 0.002481834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/ArcueidAnimController.controller
+  artifactKey: Guid(95e0cfd9a4500dd40999f653f646ba59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ArcueidAnimController.controller using Guid(95e0cfd9a4500dd40999f653f646ba59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '41a02379a43554d83040bdfcc7fd732c') in 0.007715417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 44
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Animations/ShikiEndCrouch.anim
+  artifactKey: Guid(8a9280fa405ab4234a1df6e1e6f339ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/ShikiEndCrouch.anim using Guid(8a9280fa405ab4234a1df6e1e6f339ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c6943ad680fe737c2e75df798c5c2267') in 0.0030375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Animations/ArcHeavyPunch.anim
+  artifactKey: Guid(082192f6b81c94dc6883b560a4b25678) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/ArcHeavyPunch.anim using Guid(082192f6b81c94dc6883b560a4b25678) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '41a2b86ee592ea1c4e8b13c2d16a3494') in 0.004912917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Animations/ShikiStartCrouch.anim
+  artifactKey: Guid(222f35e999f7b4c8cafa4e3836ae3a45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/ShikiStartCrouch.anim using Guid(222f35e999f7b4c8cafa4e3836ae3a45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1b0cf13d21e344515110f55d6cf6fabb') in 0.005184333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Core/Data/Moves/Move_LightPunch.asset
+  artifactKey: Guid(68850fcc40a76084485f30298460bec9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Core/Data/Moves/Move_LightPunch.asset using Guid(68850fcc40a76084485f30298460bec9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0828063aa04a19d21cf5b0c31a319753') in 0.002181125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Animations/ShikiBackwalk.anim
+  artifactKey: Guid(27830a23085e9437db89c46428d81265) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/ShikiBackwalk.anim using Guid(27830a23085e9437db89c46428d81265) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '42fc481685f73cc5458884a62c783ccb') in 0.006745208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Animations/shiki_idle 1.anim
+  artifactKey: Guid(185cf8f23282948c3bc071665e302b34) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/shiki_idle 1.anim using Guid(185cf8f23282948c3bc071665e302b34) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2db9fcffcd8931d0f9cabf173bfa75ca') in 0.003451 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Core/Gameloop.cs
+  artifactKey: Guid(0b6b9564240f2304bb30751069bbb16e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Core/Gameloop.cs using Guid(0b6b9564240f2304bb30751069bbb16e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '49e27e5fbe073e6d75ca433129a5d446') in 0.002676584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Core/Data/MoveData.cs
+  artifactKey: Guid(30ea4c54e5df76a4ca2623b8f1dd7faf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Core/Data/MoveData.cs using Guid(30ea4c54e5df76a4ca2623b8f1dd7faf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cb521fb8dee30bd1923ab45cfca841ba') in 0.001375958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Animations/ArcMediumPunch.anim
+  artifactKey: Guid(8e2f63d9460f74add90fb5404c47a766) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/ArcMediumPunch.anim using Guid(8e2f63d9460f74add90fb5404c47a766) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b038e7ad516dfc9fdb779bcabb83b395') in 0.004319417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Animations/ShikiMediumPunch.anim
+  artifactKey: Guid(f2455ba59e2564407b806437e3558ff8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/ShikiMediumPunch.anim using Guid(f2455ba59e2564407b806437e3558ff8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '54204b273a4471c977289553037c2feb') in 0.003164208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Animations/arcueid_walk.anim
+  artifactKey: Guid(9c3816a9c948c4a238134b273861c25c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/arcueid_walk.anim using Guid(9c3816a9c948c4a238134b273861c25c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '229fc019e27eb3d62fd28a4bbd6aeeeb') in 0.00533275 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Core/camera.cs
+  artifactKey: Guid(ab7182d9de58cea4aa0a992891500507) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Core/camera.cs using Guid(ab7182d9de58cea4aa0a992891500507) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b851419fd72347262656716e911d8c16') in 0.002117458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Animations/ArcueidBackWalk.anim
+  artifactKey: Guid(be9518795170b4dc4970a316fb59b001) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/ArcueidBackWalk.anim using Guid(be9518795170b4dc4970a316fb59b001) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f11846fee37ef730869243179c56c2a8') in 0.00388825 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/sprite_arcueid/ArcEndJump.anim
+  artifactKey: Guid(804c391865dce4adc90ceb62fcbc40bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/sprite_arcueid/ArcEndJump.anim using Guid(804c391865dce4adc90ceb62fcbc40bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4192a2f96fd05db33aabe1e4df4c37b9') in 0.003459875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Core/Handler/AttackHandler.cs
+  artifactKey: Guid(da4af84f2d2d88a41a591af1cf17c534) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Core/Handler/AttackHandler.cs using Guid(da4af84f2d2d88a41a591af1cf17c534) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '00e53160d58591f5440fabdf9f4111ca') in 0.0015055 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Core/Debug/InputDebug.cs
+  artifactKey: Guid(47af60685e5765d4db92b47d4e56e963) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Core/Debug/InputDebug.cs using Guid(47af60685e5765d4db92b47d4e56e963) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4a011b9a67127b3ce6fccfe648e81b95') in 0.001360958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.297664 seconds.
+  path: Assets/sprite_shiki/ShikiCrouch.anim
+  artifactKey: Guid(a9f6fe1a408464617a0ae69b8a128105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprite_shiki/ShikiCrouch.anim using Guid(a9f6fe1a408464617a0ae69b8a128105) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'acc8e14bd24f879a68d3422bf9f5bde8') in 0.007006208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.066125 seconds.
+  path: Assets/Animations/ShikiCrouch.anim
+  artifactKey: Guid(a9f6fe1a408464617a0ae69b8a128105) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/ShikiCrouch.anim using Guid(a9f6fe1a408464617a0ae69b8a128105) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8c10d6f40a59f71a82985895ab797b34') in 0.0023565 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.716174 seconds.
+  path: Assets/ArcueidAnimController.controller
+  artifactKey: Guid(95e0cfd9a4500dd40999f653f646ba59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArcueidAnimController.controller using Guid(95e0cfd9a4500dd40999f653f646ba59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '048679014dc78c47078ac25750801f86') in 0.002488208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 44
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.992307 seconds.
+  path: Assets/Animations/ArcueidAnimController.controller
+  artifactKey: Guid(95e0cfd9a4500dd40999f653f646ba59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/ArcueidAnimController.controller using Guid(95e0cfd9a4500dd40999f653f646ba59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '28777e20eacdc55d49bafe037db84432') in 0.004623917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 44
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.639279 seconds.
+  path: Assets/sprite_arcueid/arc0000.png
+  artifactKey: Guid(bd3a9a03b165c4731b347e8448ab755d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprite_arcueid/arc0000.png using Guid(bd3a9a03b165c4731b347e8448ab755d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0faf8708a99fe194b77a88a388285e3a') in 0.100564958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.959479 seconds.
+  path: Assets/sprite_arcueid/ArcEndJump.anim
+  artifactKey: Guid(804c391865dce4adc90ceb62fcbc40bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprite_arcueid/ArcEndJump.anim using Guid(804c391865dce4adc90ceb62fcbc40bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e4c30d831160909bf9ed2c771b2410f0') in 0.000678667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.577247 seconds.
+  path: Assets/sprite_arcueid/ShikiEndJump.anim
+  artifactKey: Guid(973cb32aaca8440819206b6bd9d8035c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprite_arcueid/ShikiEndJump.anim using Guid(973cb32aaca8440819206b6bd9d8035c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7430e6e357b15d31e6542c642ff2eb91') in 0.000846791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.778497 seconds.
+  path: Assets/Animations/ArcEndJump.anim
+  artifactKey: Guid(804c391865dce4adc90ceb62fcbc40bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/ArcEndJump.anim using Guid(804c391865dce4adc90ceb62fcbc40bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1faa99ef57316a927d50bc737101bdd5') in 0.004541917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Animations/ShikiJump.anim
+  artifactKey: Guid(d0362b691e8f043d3805beeaeb2f21fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/ShikiJump.anim using Guid(d0362b691e8f043d3805beeaeb2f21fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fb0f10b64cff61fcf26b9f42aabade17') in 0.003831292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Animations/ShikiStartJump.anim
+  artifactKey: Guid(ae8dcb8540e054898b42b9b3b450bce3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animations/ShikiStartJump.anim using Guid(ae8dcb8540e054898b42b9b3b450bce3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '79a12785f8af6e785bed113da4a88901') in 0.002943291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+

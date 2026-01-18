@@ -14,13 +14,17 @@ public class DebugHitboxes: MonoBehaviour
         if (attackHandler == null) return;
 
         // Draw active hitboxes
-        if (attackHandler.isAttacking)
+        if (attackHandler.isActiveFrame)
         {
             MoveData currentMove = attackHandler.currentMoveData;
             if (currentMove != null)
             {
                 Gizmos.color = Color.red;
-                Vector2 hitboxPosition = (Vector2)transform.position + currentMove.hitboxOffset;
+                Vector2 hitboxPosition = (Vector2)transform.position + 
+                    new Vector2(
+                    currentMove.hitboxOffset.x * attackHandler.directionMultiplier,
+                    currentMove.hitboxOffset.y
+                );
                 Gizmos.DrawWireCube(hitboxPosition, currentMove.hitboxSize);
             }
         }
