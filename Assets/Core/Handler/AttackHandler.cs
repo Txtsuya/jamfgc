@@ -89,16 +89,17 @@ private bool isBlocking(MoveData move, PlayerComponent self, PlayerComponent oth
             moveFrameCount = 0;
             moveHitCount = 0;
             return;
-        } else {
-            Debug.Log(currentMoveData.startupFrames);
-            Debug.Log(moveFrameCount);
-            if (moveFrameCount < currentMoveData.startupFrames) {
+        }
+        
+        if (moveFrameCount < currentMoveData.startupFrames) {
+            return;
+        }
+
+        if (moveFrameCount < currentMoveData.activeFrames + currentMoveData.startupFrames) {
+            if (moveHitCount >= currentMoveData.maxHits) {
                 return;
             }
-
-            else if (moveFrameCount < currentMoveData.activeFrames + currentMoveData.startupFrames) {
-                if (moveHitCount >= currentMoveData.maxHits) {
-                    return;
+            
             Vector2 hitboxPos = rb.position +
                 new Vector2(
                     currentMoveData.hitboxOffset.x * directionMultiplier,
@@ -110,6 +111,7 @@ private bool isBlocking(MoveData move, PlayerComponent self, PlayerComponent oth
                 0f,
                 hurtboxLayer
             );
+            
             foreach (Collider2D hit in hits)
             {
                 Debug.Log("Hit: " + hit.name);
@@ -125,44 +127,19 @@ private bool isBlocking(MoveData move, PlayerComponent self, PlayerComponent oth
                     moveHitCount++;
                     continue;
                 }
-                Vector2 hitboxPos = rb.position +
-                    new Vector2(
-                        currentMoveData.hitboxOffset.x * directionMultiplier,
-                        currentMoveData.hitboxOffset.y
-                    );
-                Collider2D[] hits = Physics2D.OverlapBoxAll(
-                    hitboxPos,
-                    currentMoveData.hitboxSize,
-                    0f,
-                    hurtboxLayer
+                
+                other.Damage(currentMoveData.damage);
+                moveHitCount++;
+                other.ApplyHitlag(currentMoveData.hitlagFrames);
+                other.ApplyKnockback(
+                    currentMoveData.knockbackDirection,
+                    currentMoveData.knockbackForce,
+                    currentMoveData.knockbackFrames,
+                    directionMultiplier
                 );
-                foreach (Collider2D hit in hits)
-                {
-                    Debug.Log("Hit: " + hit.name);
-                    if (other.isBlocking) {
-                        Debug.Log("Blocked!");
-                        moveHitCount++;
-                        continue;
-                    }
-                    other.Damage(currentMoveData.damage);
-                    moveHitCount++;
-                    other.ApplyHitlag(currentMoveData.hitlagFrames);
-                    other.ApplyKnockback(
-                        currentMoveData.knockbackDirection,
-                        currentMoveData.knockbackForce,
-                        currentMoveData.knockbackFrames,
-                        directionMultiplier
-                    );
-
-                }
-                // handle hitboxes activation/states
-                // switch on moveframecount -> data->move states
-                isActiveFrame = true;
             }
-            else
-            {
-            }
+            
+            isActiveFrame = true;
         }
-
     }
 }
