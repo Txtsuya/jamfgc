@@ -13,9 +13,20 @@ MonoBehaviour:
   m_Name: Move_MediumPunch
   m_EditorClassIdentifier: Assembly-CSharp::MoveData
   moveId: MediumPunch
-  hitboxOffset: {x: 1.5, y: 0.5}
-  hitboxSize: {x: 1.5, y: 3}
+  hitboxOffset: {x: 0.5, y: 0.5}
+  hitboxSize: {x: 1.8, y: 3}
   damage: 20
   startupFrames: 5
   activeFrames: 10
-  recoveryFrames: 5
+  recoveryFrames: 15
+  maxHits: 1
+  hitlagFrames: 5
+  knockbackForce: 5
+  knockbackFrames: 10
+  blockPushback: {x: 1, y: 0.5}
+  blockPushbackFrames: 5
+  blockPushbackForce: 1
+  blockStunFrames: 10
+  knockbackDirection: {x: 1, y: 1}
+  kbDecay: 1
+  moveType: 0

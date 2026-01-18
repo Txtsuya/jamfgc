@@ -13,9 +13,20 @@ MonoBehaviour:
   m_Name: Move_LightPunch
   m_EditorClassIdentifier: Assembly-CSharp::MoveData
   moveId: LightPunch
-  hitboxOffset: {x: 1.5, y: 0.5}
-  hitboxSize: {x: 6.5, y: 1}
+  hitboxOffset: {x: 0.5, y: 0.5}
+  hitboxSize: {x: 1, y: 1}
   damage: 10
   startupFrames: 1
   activeFrames: 4
-  recoveryFrames: 1
+  recoveryFrames: 8
+  maxHits: 1
+  hitlagFrames: 5
+  knockbackForce: 5
+  knockbackFrames: 10
+  blockPushback: {x: 1, y: 0.5}
+  blockPushbackFrames: 5
+  blockPushbackForce: 1
+  blockStunFrames: 10
+  knockbackDirection: {x: 1, y: 1}
+  kbDecay: 1
+  moveType: 0

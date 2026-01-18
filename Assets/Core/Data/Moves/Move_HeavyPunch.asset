@@ -13,15 +13,20 @@ MonoBehaviour:
   m_Name: Move_HeavyPunch
   m_EditorClassIdentifier: Assembly-CSharp::MoveData
   moveId: HeavyPunch
-  hitboxOffset: {x: 2.5, y: 0.5}
-  hitboxSize: {x: 2, y: 10}
+  hitboxOffset: {x: 1, y: 0.5}
+  hitboxSize: {x: 2.5, y: 1}
   damage: 50
-  startupFrames: 10
+  startupFrames: 20
   activeFrames: 20
   recoveryFrames: 10
   maxHits: 1
   hitlagFrames: 5
   knockbackForce: 5
   knockbackFrames: 10
+  blockPushback: {x: 1, y: 0.5}
+  blockPushbackFrames: 5
+  blockPushbackForce: 1
+  blockStunFrames: 10
   knockbackDirection: {x: 1, y: 1}
   kbDecay: 1
+  moveType: 0
